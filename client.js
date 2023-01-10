@@ -3,11 +3,16 @@ let card0 = {
     number: 2
 } //end card0
 
+let card1 = {
+    suit: 'Spades',
+    number: 1
+}
+
 console.log(card0.suit);
 console.log(card0.number);
 
 function isRed (card) {
-    if (card0.suit === 'Hearts' || card0.suit === 'Diamonds') {
+    if (card.suit === 'Hearts' || card.suit === 'Diamonds') {
         return true;
         }
     else {
@@ -15,4 +20,5 @@ function isRed (card) {
     }
 } //end isRed
 
-console.log('Test isRed', isRed(card0));
+console.log('Test isRed card0', isRed(card0));
+console.log('Test isRed card1', isRed(card1));
